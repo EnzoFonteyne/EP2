@@ -1,3 +1,8 @@
+from cria_baralho import cria_baralho
+from extrai_naipe import extrai_naipe
+from extrai_valor import extrai_valor
+
+
 def possui_movimentos_possiveis(baralho):
     for i in range (len(baralho)):
         carta = baralho[i]

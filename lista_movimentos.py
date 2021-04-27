@@ -1,5 +1,7 @@
 #Precisa importar as outras funções antes de rodar
-
+from cria_baralho import cria_baralho
+from extrai_naipe import extrai_naipe
+from extrai_valor import extrai_valor
 
 def lista_movimentos_possiveis(baralho, posicao):
     carta = baralho[posicao]
