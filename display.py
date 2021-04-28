@@ -18,4 +18,6 @@ def display(baralho):
             print('\033[37m{0}. \033[95m{1}\033[0m' .format(n, cartas))
         
         n+=1
+    return ''
+    
 print(display(baralho))
