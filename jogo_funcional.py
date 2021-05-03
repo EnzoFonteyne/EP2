@@ -24,5 +24,5 @@ while movimentos:
                 soma = 3
         else:
             soma = possivel[0]
-    destino = posicao - soma
-    baralho = empilha(baralho, posicao, destino)
+        destino = posicao - soma
+        baralho = empilha(baralho, posicao, destino)
