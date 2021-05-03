@@ -1,6 +1,6 @@
 print "situacao atual:" #(as  4 cartas) nao sei o nome que voce usou para lista de cartas
 
-print "quais cartas deseja mover 1-4? "
+print "quais cartas deseja mover 52? "
 if != 1 or 2 or 3 or 4:
     False
 else:
