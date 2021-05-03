@@ -11,9 +11,9 @@ while pergunta:
     print ('')
     print ("Desde que alguma das condições acima seja satisfeita, qualquer carta pode ser movimentada." )
     print ('')
-    print ("Aperte [Enter] para iniciar o jogo...") 
-    print ("")
-    print ("O estado atual do baralho é:")
+    
+    # copiar jogo funcional aqui
+
     pergunta_1=input("deseja jogar de novo? ")
     if pergunta_1 == "nao" or pergunta_1=="não":
         pergunta=False
