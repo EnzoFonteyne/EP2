@@ -23,6 +23,6 @@ while movimentos:
             if soma == 2:
                 soma = 3
         else:
-            possivel[0] = soma
-        destino = posicao - soma
-        baralho = empilha(baralho, posicao, destino)
+            soma = possivel[0]
+    destino = posicao - soma
+    baralho = empilha(baralho, posicao, destino)
