@@ -22,6 +22,9 @@ while movimentos:
         possivel = lista_movimentos_possiveis(baralho, posicao)
 
     if len(possivel) == 2:
+        print('Esses são os movimentos possíveis: ')
+        print('1. {0}'.format(baralho[posicao - 1]))
+        print('2. {0}'.format(baralho[posicao - 3]))
         soma = int(input('Escolha uma posição para mover (1-2): '))
         if soma == 2:
             soma = 3
