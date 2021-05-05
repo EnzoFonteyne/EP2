@@ -20,7 +20,7 @@ def possui_movimentos_possiveis(baralho):
             naipe1 = extrai_naipe(carta1)
             if valor == valor1 or naipe == naipe1:
                 resultado = True
-        elif i > 0:
+        elif i > 1:
             carta1 = baralho[i-1]
             valor1 = extrai_valor(carta1)
             naipe1 = extrai_naipe(carta1)
