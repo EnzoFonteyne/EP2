@@ -23,8 +23,25 @@ while movimentos:
 
     if len(possivel) == 2:
         print('Esses são os movimentos possíveis: ')
-        print('1. {0}'.format(baralho[posicao - 1]))
-        print('2. {0}'.format(baralho[posicao - 3]))
+        naipe = extrai_naipe(baralho[posicao-1])
+        if naipe == '♠':
+            print('\033[37m{0}. \033[96m{1}\033[0m' .format(1, baralho[posicao-1]))
+        elif naipe == '♥':
+            print('\033[37m{0}. \033[91m{1}\033[0m' .format(1, baralho[posicao-1]))
+        elif naipe == '♦':
+            print('\033[37m{0}. \033[92m{1}\033[0m' .format(1, baralho[posicao-1]))
+        else:
+            print('\033[37m{0}. \033[95m{1}\033[0m' .format(1, baralho[posicao-1]))
+        naipe = extrai_naipe(baralho[posicao-3])
+        if naipe == '♠':
+            print('\033[37m{0}. \033[96m{1}\033[0m' .format(2, baralho[posicao-3]))
+        elif naipe == '♥':
+            print('\033[37m{0}. \033[91m{1}\033[0m' .format(2, baralho[posicao-3]))
+        elif naipe == '♦':
+            print('\033[37m{0}. \033[92m{1}\033[0m' .format(2, baralho[posicao-3]))
+        else:
+            print('\033[37m{0}. \033[95m{1}\033[0m' .format(2, baralho[posicao-3]))
+        
         soma = int(input('Escolha uma posição para mover (1-2): '))
         if soma !=2 and soma !=1:
             soma = int(input('Numero invalido escolha (1-2) para mover: '))
