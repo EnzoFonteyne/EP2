@@ -13,6 +13,7 @@ while movimentos:
     print(display(baralho))
     movimentos = possui_movimentos_possiveis(baralho)
     posicao = int(input('Escolha uma numero de 1 a {0}: '.format(len(baralho))))
+    posicao = posicao - 1
     possivel = lista_movimentos_possiveis(baralho, posicao)
     while len(possivel) < 1:
         print('Essa carta não possui movimentos')
@@ -25,17 +26,9 @@ while movimentos:
                 soma = 3
         else:
             soma = possivel[0]
-<<<<<<< HEAD
         destino = posicao - soma
         baralho = empilha(baralho, posicao, destino)
 
         #baralho está mudando para cartas acima
-=======
-<<<<<<< HEAD
-        destino = posicao - soma
-        baralho = empilha(baralho, posicao, destino)
-=======
     destino = posicao - soma
     baralho = empilha(baralho, posicao, destino)
->>>>>>> e2b1641ee333b575c6d80187997863ac200e5e43
->>>>>>> 3ef568ed7e6dc7e8c599507779cc5f20f162e3d6
