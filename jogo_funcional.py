@@ -8,7 +8,6 @@ from display import display
 
 
 baralho = cria_baralho()
-
 movimentos = True
 while movimentos:
     print(display(baralho))
@@ -26,3 +25,5 @@ while movimentos:
             soma = possivel[0]
         destino = posicao - soma
         baralho = empilha(baralho, posicao, destino)
+
+        #baralho está mudando para cartas acima
