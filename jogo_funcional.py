@@ -26,7 +26,7 @@ while movimentos:
         print('1. {0}'.format(baralho[posicao - 1]))
         print('2. {0}'.format(baralho[posicao - 3]))
         soma = int(input('Escolha uma posição para mover (1-2): '))
-        if soma !=2 or soma !=1:
+        if soma !=2 and soma !=1:
             soma = int(input('Numero invalido escolha (1-2) para mover: '))
         if soma == 2:
             soma = 3
