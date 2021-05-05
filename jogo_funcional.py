@@ -33,4 +33,16 @@ while movimentos:
     destino = posicao - soma
     baralho = empilha(baralho, posicao, destino)
 
+if len(baralho) > 1:
+    jogar = input('Infelizmente você perdeu... deseja começar um novo jogo? digite sim ou nao: ')
+    if jogar == 'sim':
+        pergunta = True
+    else:
+        print('Muito obrigado por jogar nosso jogo, volte smp freguês')
+else:
+    jogar = input('Parabéns! Você ganhou o jogo! Deseja começar um novo jogo? digite sim ou nao: ')
+    if jogar == 'sim':
+        pergunta = True
+    else:
+        print('Muito obrigado por jogar nosso jogo, volte smp!')    
         #baralho está mudando para cartas acima
