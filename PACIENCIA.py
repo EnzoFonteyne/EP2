@@ -27,6 +27,9 @@ while pergunta:
         print(display(baralho))
         movimentos = possui_movimentos_possiveis(baralho)
         posicao = int(input('Escolha uma numero de 1 a {0}: '.format(len(baralho))))
+        if posicao > len(baralho):
+            print('Ops, não temos tudo isso de cartas! Vamos considerar que vc queria pegar a ultima carta ok?')
+            posicao = len(baralho)
         posicao -= 1
         possivel = lista_movimentos_possiveis(baralho, posicao)
 
@@ -34,6 +37,9 @@ while pergunta:
         while len(possivel) == 0:
             print('Essa carta não possui movimentos')
             posicao = int(input('Escolha uma numero de 1 a {0}: '.format(len(baralho))))
+            if posicao > len(baralho):
+                print('Ops, não temos tudo isso de cartas! Vamos considerar que vc queria pegar a ultima carta ok?')
+                posicao = len(baralho)
             posicao -= 1
             possivel = lista_movimentos_possiveis(baralho, posicao)
 
