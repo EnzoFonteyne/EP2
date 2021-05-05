@@ -19,7 +19,7 @@ print(conteudo)
 # Criando um loop para recomeçar o jogo no final
 pergunta= True
 while pergunta:
-    #baralho = cria_baralho()
+    baralho = cria_baralho()
     movimentos = True
 
 # Criando um loop para o jogador continuar jogando enquanto houver movimentos possíveis
