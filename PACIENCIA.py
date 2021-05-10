@@ -19,13 +19,14 @@ print(conteudo)
 # Criando um loop para recomeçar o jogo no final
 pergunta= True
 while pergunta:
-    baralho = cria_baralho()
+    baralho = ['A♠', 'A♥', 'A♦', 'A♣']
+    #baralho = cria_baralho()
     movimentos = True
 
 # Criando um loop para o jogador continuar jogando enquanto houver movimentos possíveis
     while movimentos:
         print(display(baralho))
-        movimentos = possui_movimentos_possiveis(baralho)
+        
         posicao = int(input('Escolha uma numero de 1 a {0}: '.format(len(baralho))))
         if posicao > len(baralho):
             print('Ops, não temos tudo isso de cartas! Vamos considerar que vc queria pegar a ultima carta ok?')
@@ -81,7 +82,7 @@ while pergunta:
             soma = possivel[0]
         destino = posicao - soma
         baralho = empilha(baralho, posicao, destino)
-
+        movimentos = possui_movimentos_possiveis(baralho)
 # Descobrino se o jogador ganhou ou perdeu
     if len(baralho) > 1:
         jogar = input('Infelizmente você perdeu... deseja começar um novo jogo? digite sim ou nao: ')
